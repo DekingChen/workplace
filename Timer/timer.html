@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>倒计时</title>
+    <script type="text/javascript" src="./jquery.min.js"></script>
+    <script type="text/javascript" src="./Timer.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            var end ="2016/08/05 23:50:00";
+           // end = "2016/08/02 23:59:00";
+            $("#end").text(end);
+            $(".timer").Timer({
+                endDate:end
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="box">
+        <div>距离：<span id="end"></span> 还剩下:</div>
+        <div class="timer">
+            <span id="days"></span>天
+            <span  id="hours"></span>时
+            <span  id="minutes"></span>分
+            <sapn id="seconds"></sapn>秒
+        </div>
+    </div>
+</body>
+</html>

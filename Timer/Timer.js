@@ -1,4 +1,4 @@
-;(function($){
+(function($){
 	$.fn.Timer = function(options){
 		var defaults = {
 				endDate : 0,
